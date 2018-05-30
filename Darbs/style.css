@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body {
+	margin: 0px;
+	background-color: lightgreen;
+	font-family: 'Dancing Script', cursive;
+}
+
+header{
+	display: flex;
+	background-color: lime;
+	padding: 20px 40px;
+}
+
+.navigation{
+	text-transform: uppercase;
+	flex: 2;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+.navigation li{
+	list-style-type: none;
+	flex: 1;
+	text-align: center;
+  	align-self: center;
+}
+
+.site-info-navigation{
+	flex: 1!important;
+	display: block!important;
+}
+
+.site-info-navigation li{
+	display: inline-block!important;
+}
+
+
+.navigation a {
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.navigation a:link { 
+	color: darkgreen;
+}
+.navigation a:visited {
+	color: darkgreen;
+}
+.navigation a:hover {
+	border: 1px solid;
+	border-radius: 2px;
+}
+.navigation a:active {
+	cursor: progress;
+}
+
+#logo{
+	height:50px;
+}
+
+
+#site-title{
+	font-size:20px;
+
+}
+h1{
+		color:darkgreen;
+}
+
+main{
+	padding: 20px 40px;
+	text-align: justify;
+	font-family: 'Dancing Script', cursive;
+	display: flex;
+}
+article{
+	background-color: lightgreen;
+	flex:1 ;
+	padding: 10px;
+}
+
+footer{
+	display: flex;
+	background-color: lime;
+	padding: 20px 40px;
+}
+#year, #copyright, address{
+	flex: 1;
+}
+footer > * {
+	flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        background-color: lightpink;
+    }
+}
+
+div:nth-child(odd) {
+  background-color: black;
+}
+div:nth-child(3n) {
+  background-color: gray;
+}
